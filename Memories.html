@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Memories</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fce4ec;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+
+    .slideshow {
+      max-width: 350px;
+      margin: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .slides img {
+      width: 100%;
+      display: none;
+    }
+
+    .slides img.active {
+      display: block;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #d81b60;
+      color: white;
+      border-radius: 10px;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ad1457;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Our Memories 💖 </h1>
+
+  <div class="slideshow">
+    <div class="slides">
+      <!-- ADD YOUR IMAGES HERE -->
+      <img src="pic1.jpg" class="active">
+      <img src="pic2.jpg">
+      <img src="pic3.jpg">
+      <img src="pic4.jpg">
+      <img src="pic5.jpg">
+      <img src="pic6.jpg">
+      <img src="pic7.jpg">
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+  </div>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slides img");
+
+  function showSlide(n) {
+    slides.forEach(img => img.classList.remove("active"));
+    slides[n].classList.add("active");
+  }
+
+  function nextSlide() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlide(slideIndex);
+  }
+
+  function prevSlide() {
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+    showSlide(slideIndex);
+  }
+
+  // Auto-slide every 3 seconds
+  setInterval(nextSlide, 3000);
+</script>
+
+</body>
+</html>
