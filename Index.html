@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Bestie</title>
+
+  <!-- MOBILE FRIENDLY -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BIRTHDAY AESTHETIC STYLE -->
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #fff7fb;
+    }
+
+    /* TOP BANNER */
+    .hero {
+      background: linear-gradient(to bottom right, #ff7aa2, #ffb3d1);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    /* BEAUTIFUL SECTIONS */
+    .section-box {
+      background: white;
+      margin: 25px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .section-box h2 {
+      margin-bottom: 8px;
+      color: #ff7aa2;
+    }
+
+    /* VIDEO EMBED RESPONSIVE */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      margin-top: 10px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FADE ANIMATION */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <h1>Happy Birthday, My Favourite Human </h1>
+    <p>I made this little world for you </p>
+  </section>
+
+  <!-- OUR MEMORIES -->
+  <section class="section-box" id="memories">
+      <a href="Memories.html"><div class="tab"><h2>Our Memories </h2></div></a>
+    <p>Little pieces of time that became priceless.</p>
+    <!-- Add photos or text here -->
+  </section>
+ 
+  <!-- TIMELINE OF FRIENDSHIP -->
+  <section class="section-box" id="timeline">
+    <h2>Timeline of Us </h2>
+    <p>The journey of two idiots becoming soul-friends.</p>
+    <!-- Add timeline items here -->
+  </section>
+
+  <!-- CONNECTION CORNER -->
+  <section class="section-box" id="connection">
+    <h2>Connection Corner </h2>
+    <p>Things I never say enough, but truly mean.</p>
+    <!-- Add emotional letters / notes here -->
+  </section>
+
+  <!-- VIDEOS SECTION -->
+  <section class="section-box" id="videos">
+    <h2>Videos For Your Heart </h2>
+    <p>Handpicked comfort & motivation videos.</p>
+
+    <!-- VIDEO 1 -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="video-container" style="margin-top:20px;">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+    </div>
+
+  </section>
+
+  <!-- CRAZY STUFF -->
+  <section class="section-box" id="crazy">
+    <h2>Crazy Stuff </h2>
+    <p>Because what are best friends without chaos?</p>
+    <!-- Add memes, screenshots, jokes, reels etc -->
+  </section>
+
+  <!-- BIRTHDAY MESSAGE -->
+  <section class="section-box" id="message">
+    <h2>My Birthday Wish For You </h2>
+    <p>Write your heartfelt message here…</p>
+  </section>
+
+</body>
+</html>
